@@ -1,0 +1,60 @@
+cTREEVIEW Class Wrapper / DLL - Version 2.0.0
+---------------------------------------------
+
+Welcome to the latest release of the cTreeview class designed to simply the
+TreeView control usablility plus add new functionality. (View cTreeView
+History.Txt for a list of features that have been added.) Four tutorial
+applications have also been included to help learn how to use most features
+found the class wrapper.
+
+Just some quick notes to get you started:-
+
+1. Before loading any of the projects into the IDE, the DLL must be extreated
+   and registered. There is a zip file in the '.\cTreeview\Runtime'
+   directory. Unzip the files into the directory and register the vbTree.DLL
+   file ($System$\regsvr32 $Install_Dir$\cTreeview\Runtime\vbTree.DLL.
+   Directory must be 8.3 format [Where $System$ = Windows System Directory &
+   $Install_Dir$ is the host drive and directory for the cTreeview directory
+   (e.g. c:\Windows\System\regsvr32
+         c:\MyProj~1\cTreeView\Runtime\vbTree.DLL {on the same line})].
+
+2. Each tutorial directory has three ways of loading: a) Tutorial?.vbp; b)
+   Tutorial?_inc_VbTree.vbg; c) Tutorial?_NODLL.vbp. Method a) will load the
+   tutorial with a reference to the vbTree.DLL; method b) is a project group
+   that will load both the tutorial & the vbTree DLL source; and method c)
+   loads the tutorial and the cTREEVIEW Class Wrapper files as a single
+   project with no vbTree.DLL dependancy.
+
+   The third method causes the cTreeview.cls & iMultiSelect.cls classes to
+   change thier instances to Private. So make sure that you read the headers
+   of these files to alter the instancing depending on the type of compile
+   being used.
+
+3. In the .\cTreeview\Resources\Help directory is an Xml document created by
+   MZTools (http://www.mztools.com) that can be viewed in a Web Browser that
+   outlines all of the properties and methods of all vbTree.DLL classes.
+
+4. In creating these projects, I've used some external libraries. They are: 
+   Microsoft XML v3.0 (DLLs), Microsoft ADO v2.5 (DLLs), Microsoft Windows
+   Common Controls 6.0 SP4 (OCX).
+
+5. For those who have used the earlier versions of the cTreeView Wrapper 
+   class, be aware that there have been some changes that break 
+   compatability with the earlier versions. They are as follows:-
+	a. 'CutIconState' was a function. This is now a Read/Write property
+           called 'CutIcon'. 
+	b. 'NodeFirstViewable' was a function. This is now a Read/Write
+           property called 'FirstVisibleNode'.
+	c. 'NodeLastViewable' was a function. This is now a Read only
+           property called 'LastVisibleNode'.
+	d. Event: 'CopyNode' now has an additional field called 'Cancel'.
+           This is now used instead of write only property 'CancelCopy'.
+        e. 'NodeDelete' method has a new field 'bIncludeChildren' (Default
+           = True). If 'bIncludeChildren' is false, only the nominated node
+           will be deleted and the child nodes will move up in nesting
+           levels. (See Tutorial 1) i.e. to the node's parent.
+
+Enjoy!
+
+Graeme (a.k.a. Slider)
+E-mail: graemeg33@hotmail.com

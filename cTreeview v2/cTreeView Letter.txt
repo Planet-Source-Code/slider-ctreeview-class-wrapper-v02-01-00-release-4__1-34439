@@ -1,0 +1,15 @@
+I am pleased to finally announce the release of cTreeView v2.0.0 (Release 4). 
+
+The award-winning TreeView Class wrapper has been rebuilt and optimised using APIs plus many new features added like simple Drag'n'Drop with auto-expand & auto-scroll, Multi-Node selection, Overlay Icons, load/save to binary/Xml file, and many more - 52 in all! 
+
+5 Tutorial applications are included to demonstrate sets of features to help make it easier to understand and implement into your own applications. The Wrapper contains several files that can either be embedded directly in an appplication or compiled into an in-process DLL (by Default). 
+
+Goto <http://www.planetsourcecode.com/vb/scripts/ShowCode.asp?txtCodeId=33322&lngWId=1> to download the latest version.
+
+I hope that you find this useful!
+
+Kind Regards,
+
+Slider
+
+PS: Please don't forget to vote!
